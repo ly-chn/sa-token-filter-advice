@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @since 2024/1/17 9:54
  */
 @RestControllerAdvice
-public class AppExceptionAdvice {
+public class AppExceptionHandler {
     @ExceptionHandler(Exception.class)
     public String handler(Exception e) {
         return "Some error happened: " + e.getMessage();
